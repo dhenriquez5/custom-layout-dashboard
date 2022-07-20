@@ -9,23 +9,13 @@ import { FaTimes } from 'react-icons/fa';
 import { FaBars } from 'react-icons/fa';
 
 export const Dashboard = () => {
-    const isMobile = useCheckMobileScreen();
-    const [showSidebar, setShowSidebar] = useState(false);
-
-    const toggle = () => {
-        setShowSidebar(prev=>!prev);
-    }
-
     return (
         <>
             <div className={classes.container}>
 
                 <Navbar />
-                 
-                 <SideBar />
-                
-                
 
+                <SideBar />
 
                 <Main />
 

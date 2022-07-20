@@ -43,7 +43,6 @@ export const SideBar = ({ active }) => {
         </div>
       )}
       {
-
         (showSidebar || !isMobile)  && (
           <aside style={mobileStyles}  className={classes.sidenav}>
             <ul className={classes.sidenav__list}>
