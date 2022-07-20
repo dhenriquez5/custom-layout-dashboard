@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer "
+    ;
+
+    height: 100vh;
+
+}
+
+@media only screen and (min-width: 46.875em) {
+
+    /* Show the sidenav */
+    .container {
+        grid-template-columns: 240px 1fr;
+        /* Show the side nav for non-mobile screens */
+        grid-template-areas:
+            "sidenav  header"
+            "sidenav  main"
+            "sidenav  footer";
+    }
+
+    .sidenav {
+        display: flex;
+        flex-direction: column;
+    }
+}

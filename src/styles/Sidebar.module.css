@@ -1,0 +1,38 @@
+.menu__icon {
+    position: fixed;
+    display: flex;
+    top: 5px;
+    left: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+    padding: 12px;
+    background-color: #DADAE3;
+}
+
+.sidenav {
+    display: flex;
+    /* Will be hidden on mobile */
+    flex-direction: column;
+    grid-area: sidenav;
+    background-color: #394263;
+}
+
+.sidenav__list {
+    padding: 0;
+    margin-top: 85px;
+    list-style-type: none;
+}
+
+.sidenav__list__item {
+    padding: 20px 20px 20px 40px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.sidenav__list__item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}

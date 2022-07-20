@@ -1,0 +1,13 @@
+.footer {
+    grid-area: footer;
+    background-color: #648ca6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* EJE PRINCIPAL  */
+    align-items: center;
+    /* EJE SECUNDARIO  */
+    padding: 0 16px;
+    background-color: #648ca6
+}
+
