@@ -1,4 +1,5 @@
 .container {
+    background-color:#dce6f1;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px 1fr 50px;
@@ -19,13 +20,13 @@
         grid-template-columns: 240px 1fr;
         /* Show the side nav for non-mobile screens */
         grid-template-areas:
-            "sidenav  header"
+            "header  header"
             "sidenav  main"
-            "sidenav  footer";
+            "sidenav  main";
     }
 
-    .sidenav {
+    /* .sidenav {
         display: flex;
         flex-direction: column;
-    }
+    } */
 }

@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react'
-
 import classes from '../../styles/Sidebar.module.css';
 import { SidebarList } from './SidebarList';
 import { FaBars } from 'react-icons/fa';
@@ -11,6 +10,10 @@ const menuItems = [
   { path: '', name: 'Item 2' },
   { path: '', name: 'Item 3' },
   { path: '', name: 'Item 4' },
+  { path: '', name: 'Item 5' },
+  { path: '', name: 'Item 6' },
+  { path: '', name: 'Item 7' },
+
 ]
 
 
@@ -24,11 +27,19 @@ export const SideBar = ({ active }) => {
   }
 
   let mobileStyles={};
-
+  let ulMobileStyles={};
   if(isMobile) {
       mobileStyles={
-        position:'fixed'
+        top:'20px',
+        position:'fixed',
+        padding:0,
+        margin:10,
+        borderRadius:6,
+        width:'50%',
       };
+      ulMobileStyles={
+        marginTop:'0px'
+      }
   }
 
 
@@ -45,7 +56,7 @@ export const SideBar = ({ active }) => {
       {
         (showSidebar || !isMobile)  && (
           <aside style={mobileStyles}  className={classes.sidenav}>
-            <ul className={classes.sidenav__list}>
+            <ul  style={ulMobileStyles} className={classes.sidenav__list}>
               {
                 menuItems && menuItems.map(({ path, name }) => (
                   <SidebarList key={name} title={name} path={path} />
